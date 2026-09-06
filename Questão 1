@@ -1,0 +1,23 @@
+public class Principal {
+    public static void main(String[] args) {
+		
+		
+		double valor1 = 2.95;
+		double valor2 = 3.50;
+		double soma_valores = valor1 + valor2;
+		double taxa = ((8.25)/100) * soma_valores;
+		double valor1_taxa = ((8.25)/100) * valor1;
+		double valor2_taxa = ((8.25)/100) * valor2;
+		double novo_custo = valor1_taxa + valor2_taxa;
+		
+		
+		
+		System.out.println("O intem 1 custa: " + valor1);
+		System.out.println("O intem 2 custa: " + valor2);
+		System.out.println("A soma dos intens é " + soma_valores);
+		System.out.println("A taxa de 8,25% sobre a soma dos valores dos intens é: " + taxa);
+		System.out.println(" ");
+		System.out.println("A nova soma dos intens com a taxa inclusa é :" + novo_custo);
+		
+	}
+}

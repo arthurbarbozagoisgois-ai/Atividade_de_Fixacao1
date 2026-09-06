@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Principal {
+    public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro valor: ");
+		int v1 = entrada.nextInt();
+		System.out.println("Digite o segundo valor: ");
+		int v2 = entrada.nextInt();
+		System.out.println("Digite o terceiro valor: ");
+		int v3 = entrada.nextInt();
+		
+		double soma_valores = v1 + v2 + v3;
+		double media_valores = (soma_valores)/3;
+		double produto_valores = v1 * v2 * v3;
+		
+		System.out.println("A soma dos valores é: ");
+		System.out.println(soma_valores);
+		
+		
+		System.out.println("A média dos valores é: ");
+		System.out.println(media_valores);
+		
+		
+		System.out.println("O produto dos valores é: ");
+		System.out.println(produto_valores);	
+	}
+}
+

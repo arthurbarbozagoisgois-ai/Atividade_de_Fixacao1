@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Principal {
+    public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Escreva o dia: ");
+		int dia = entrada.nextInt();
+		
+		System.out.println("Escreva o mês: ");
+		int mes = entrada.nextInt();
+		
+		System.out.println("Escreva o ano: ");
+		int ano = entrada.nextInt();
+		
+		int dia_mes = 0;
+		
+		switch (mes){
+			case 4:  // Abril
+            case 6:  // Junho
+            case 9:  // Setembro
+            case 11: // Novembro
+                dia_mes = 30;
+                break;
+                
+            case 1:  // Janeiro
+            case 3:  // Março
+            case 5:  // Maio
+            case 7:  // Julho
+            case 8:  // Agosto
+            case 10: // Outubro
+            case 12: // Dezembro
+                dia_mes = 31;
+                break;
+                
+            case 2:  // Fevereiro (ignorando ano bissexto conforme o enunciado)
+                dia_mes = 28;
+                break;
+                
+            default:
+                System.out.println("Mês inválido!");
+                return; // Encerra o programa se o mês não existir
+        }
+        
+        System.out.println(" ");
+		System.out.println("Data Completa: " + dia + "/" + mes + "/" + ano + " " + dia_mes + " dias no mês!");
+
+	}	
+	
+}
+

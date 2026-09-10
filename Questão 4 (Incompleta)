@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Principal {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+
+        // Inserir valores
+        System.out.print("Escreva o primeiro valor: ");
+        int v1 = entrada.nextInt();// Valor 1
+        System.out.println(" ");
+        System.out.print("Escreva o segundo valor: ");
+        int v2 = entrada.nextInt();// Valor 2
+        System.out.println(" ");
+        System.out.print("Escreva o terceiro valor: ");
+        int v3 = entrada.nextInt();// Valor 3
+        System.out.println(" ");
+        System.out.print("Escreva o quarto valor: ");
+        int v4 = entrada.nextInt();// Valor 4
+        System.out.println(" ");
+        System.out.println("Valores escritos: " + v1 + " " + v2 + " " + v3 + " " + v4);
+
+     
+
+    }   
+    
+}
+
+
